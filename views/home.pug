@@ -1,0 +1,20 @@
+extends base.pug
+
+block script
+  script(src="https://kit.fontawesome.com/557cb9466e.js")
+
+block style
+  style
+     include ../static/style.css
+
+block content
+   form(action="/" method="post" id="header")
+      h1 Login with SahilCode
+      
+      <i class="fa fa-envelope"></i>
+      input(type="text" class="myinput" name="email" id="email" placeholder="Enter your Email")
+        
+      <br>
+      <i class="fa fa-key"></i>
+      input(type="password" class="myinput" name="password" id="password" placeholder="Enter your Password")
+      <button class="btn" id="adbtn">Login</button>
