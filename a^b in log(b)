@@ -1,0 +1,16 @@
+double xpow(double a,ll b)
+{
+    if(!b)
+        return 1;
+    if(b==1)
+        return a;
+    if(b&1)
+    {
+        return((a*xpow(a,b-1)));
+    }
+    else
+    {
+        p=xpow(a,b/2);
+        return((p*p));
+    }
+}
